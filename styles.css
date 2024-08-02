@@ -1,71 +1,79 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: hsl(0, 23%, 97%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     margin: 0;
+    padding: 0;
+    background-color: #081b29; /* Entire background color */
+    color: #fff; /* Default text color for better readability */
 }
 
-.login-container {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    text-align: center;
-}
-
-h2 {
-    margin-bottom: 20px;
-}
-
-.input-group {
-    margin-bottom: 15px;
-    text-align: left;
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-input[type="text"],
-input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-input[type="checkbox"] {
-    margin-right: 5px;
-}
-
-button {
-    width: 100%;
-    padding: 10px;
-    background-color: #007bff;
+header {
+    background: #081b29; /* Match the overall background color */
     color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+    padding: 10px 90px;
+    text-align: right;
 }
 
-button:hover {
-    background-color: #0056b3;
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Use flexbox to align items horizontally */
+    justify-content: flex-end; /* Align items to the right */
 }
 
-.register-text {
-    margin-top: 15px;
+nav ul li {
+    margin: 0 15px; /* Add margin between the items */
 }
 
-.register-text a {
-    color: #007bff;
+nav ul li a {
+    color: #f5f7f9;
     text-decoration: none;
 }
 
-.register-text a:hover {
-    text-decoration: underline;
+nav ul li a h3 {
+    margin: 0;
+}
+
+#Home {
+    text-align: left;
+    padding: 90px 90px;
+    background-color: #081b29; /* Match the overall background color */
+}
+
+#Home h1 {
+    font-size: 4em; /* Large font size */
+    color: white; /* White color for h1 */
+    margin: 0;
+}
+
+#Home p {
+    font-size: 2em; /* Large font size for p */
+    color: #0a5370; /* Sky blue color for p */
+    margin: 10px 0 0;
+}
+
+section {
+    padding: 20px;
+}
+
+footer {
+    background: #081b29; /* Match the overall background color */
+    color: #fff; /* White color for footer text */
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: center; /* Center align the items */
+    }
+    
+    nav ul li {
+        margin: 5px 0;
+    }
 }
